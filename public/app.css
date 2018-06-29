@@ -123,7 +123,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    
     height: 75px;
 }
 .fa-bars{
@@ -152,4 +152,30 @@ li i:hover {
 .active {
     background-color: #4CAF50;
     color: white;
+}
+
+.navbar-brand {
+    /* right: 50%; */
+    position: absolute;
+    width: 33%;
+    left: 33%;
+    /* top: 0; */
+    text-align: center;
+    margin: auto;
+    color: #4CAF50;
+    font-size: 50px;
+}
+
+.navbar-toggle {
+    z-index: 3;
+}
+.navbar{
+    background: #333;
+}
+.navRight{
+    padding: 0 !important;
+    padding-top: 80% !important;
+    text-align: center;
+    height:33%;
+    border: 1px solid #4caf50;
 }
