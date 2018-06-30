@@ -40,31 +40,21 @@ body{
     /* Black*/
     overflow-x: hidden;
     /* Disable horizontal scroll */
-    padding-top: 60px;
     /* Place content 60px from the top */
     transition: 0.5s;
+    text-align: center;
     /* 0.5 second transition effect to slide in the sidenav */
 }
 
 /* The navigation menu links */
 
-.sidenav a {
+.sidenav a, .account a {
     
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
     transition: 0.5s;
-}
-
-.account a {
-    
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.5s;
-    text-align: right;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -202,4 +192,16 @@ a p{
 }
 .fa-angle-left:before:hover {
     background: #2C2C2C
+}
+.profile{
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid #4caf50;
+    vertical-align: middle;
+    margin-top: 25px;
+}
+.right{
+    transition: .5s;
 }
