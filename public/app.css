@@ -1,6 +1,7 @@
 /* The side navigation menu */
 body{
     background: #222121;
+    font-family: 'Raleway', sans-serif; 
 }
 .sidenav {
     height: 100%;
@@ -18,7 +19,6 @@ body{
     /* Black*/
     overflow-x: hidden;
     /* Disable horizontal scroll */
-    padding-top: 60px;
     /* Place content 60px from the top */
     transition: 0.5s;
     /* 0.5 second transition effect to slide in the sidenav */
@@ -49,21 +49,21 @@ body{
 /* The navigation menu links */
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .account a {
-    padding: 8px 32px 8px 8px;
+    
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s;
+    transition: 0.5s;
     text-align: right;
 }
 
@@ -140,6 +140,7 @@ li i {
     text-align: center;
     padding: 15px 35px;
     text-decoration: none;
+    transition: .5s;
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -160,6 +161,7 @@ li i:hover {
     width: 33%;
     left: 33%;
     /* top: 0; */
+    font-weight: 800;
     text-align: center;
     margin: auto;
     color: #4CAF50;
@@ -172,10 +174,32 @@ li i:hover {
 .navbar{
     background: #333;
 }
-.navRight{
-    padding: 0 !important;
-    padding-top: 80% !important;
+.navRight {
+    /* padding: 0 !important; */
+    /* padding-top: 80% !important; */
     text-align: center;
-    height:33%;
+    /* height: 360px; */
     border: 1px solid #4caf50;
+    height: 33.3%;
+    vertical-align: middle;
+}
+a p{
+    padding-top: 112px;
+    font-size: 35px;
+}
+.backArrow{
+    transition: all .3s;
+    display: none;
+    position: absolute;
+    top: 0;
+    padding: 22px 35px;
+    color: white;
+    
+}
+.backArrow:hover{
+    color: #4caf50;
+    
+}
+.fa-angle-left:before:hover {
+    background: #2C2C2C
 }

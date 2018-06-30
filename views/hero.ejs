@@ -10,16 +10,22 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
     <link rel="stylesheet" href="/reset.css">
     <link rel="stylesheet" href="/app.css">
 </head>
 
 <body>
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a class='navRight' href="#">Search</a>
-        <a class='navRight' href="#">Build</a>
-        <a class='navRight' href="#">Community</a>
+        <a class='navRight' href="#">
+            <p>Search</p>
+        </a>
+        <a class='navRight' href="#">
+            <p>Build</p>
+        </a>
+        <a class='navRight' href="#">
+            <p>Community</p>
+        </a>
     </div>
     <div id="accountTab" class="account">
         <a href="javascript:void(0)" class="closebtn" onclick="closeAccount()">&times;</a>
@@ -47,6 +53,7 @@
         </div>
     </div> -->
     <nav class="navbar navbar-default" role="navigation">
+
         <!-- Brand and toggle get grouped for better mobile display -->
 
         <h1 class="navbar-brand" href="#">Build-A-Comp</h1>
@@ -54,6 +61,7 @@
 
 
         <ul class="nav navbar-nav navbar-left">
+
             <li>
                 <i onclick="openNav()" class="fas fa-bars fa-3x"></i>
             </li>
@@ -69,8 +77,10 @@
     </nav>
 
     <div id="main">
-
     </div>
+    <i onclick='closeNav()' class="fas fa-angle-left fa-3x backArrow"></i>
+
+
 
     <script src="/app.js "></script>
 </body>
