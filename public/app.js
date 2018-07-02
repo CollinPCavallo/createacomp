@@ -4,8 +4,8 @@ function openNav() {
     // document.getElementsByClassName("navRight").style.height = "360px";
     document.getElementById("main").style.marginLeft = "500px";
     document.getElementsByClassName('left')[0].style.display = 'block';
-    document.getElementsByClassName('backArrow')[0].style.marginLeft = '25%';
-    document.getElementsByClassName('backArrow')[0].classList.toggle('widescreenArrowLeft')
+    document.getElementsByClassName('backArrow')[0].style.marginLeft = '80%';
+   
     // document.body.style.backgroundColor = "rgba(34,33,33,.9)";
     
     
@@ -15,14 +15,14 @@ function openAccount() {
     document.getElementById("main").style.marginRight = "500px";
     // document.body.style.backgroundColor = "rgba(34,33,33,.9)";
     document.getElementsByClassName('right')[0].style.display = 'block';
-    document.getElementsByClassName('right')[0].style.marginLeft = '67%';
-    document.getElementsByClassName('right')[0].classList.toggle('widescreenArrowRight')
+    document.getElementsByClassName('right')[0].style.marginRight = '80%';
+    
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementsByClassName('backArrow')[0].classList.toggle('widescreenArrowLeft')
+    
     document.getElementById("main").style.marginLeft = "0";
     document.getElementsByClassName('backArrow')[0].style.display = 'none';
     document.body.style.backgroundColor = "#222121";
@@ -30,7 +30,6 @@ function closeNav() {
 
 function closeAccount() {
     document.getElementById("accountTab").style.width = "0";
-    document.getElementsByClassName('right')[0].classList.toggle('widescreenArrowRight')
     document.getElementById("main").style.marginRight = "0";
     document.getElementsByClassName('right')[0].style.display = 'none';
     document.body.style.backgroundColor = "#222121";

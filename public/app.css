@@ -204,13 +204,3 @@ a p {
 .right {
     transition: .5s;
 }
-
-
-@media screen and (min-width: 1920px){
-    .widescreenArrowLeft {
-        margin-left: 15% !important;
-    }
-    .widescreenArrowRight {
-        margin-left: 82% !important;
-    }
-}
