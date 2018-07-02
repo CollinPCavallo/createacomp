@@ -1,9 +1,12 @@
 /* The side navigation menu */
-body{
+
+body {
     background: #222121;
-    font-family: 'Raleway', sans-serif; 
+    font-family: 'Raleway', sans-serif;
 }
+
 .sidenav {
+    max-width: 450px;
     height: 100%;
     /* 100% Full-height */
     width: 0;
@@ -25,6 +28,7 @@ body{
 }
 
 .account {
+    max-width: 450px;
     height: 100%;
     /* 100% Full-height */
     width: 0;
@@ -43,13 +47,14 @@ body{
     /* Place content 60px from the top */
     transition: 0.5s;
     text-align: center;
+    border: 1px solid #4caf50;
     /* 0.5 second transition effect to slide in the sidenav */
 }
 
 /* The navigation menu links */
 
-.sidenav a, .account a {
-    
+.sidenav a,
+.account a {
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -93,30 +98,15 @@ body{
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-    .sidenav a {
-        font-size: 18px;
-    }
-    .account {
-        padding-top: 15px;
-    }
-    .account a {
-        font-size: 18px;
-    }
-}
-
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    
     height: 75px;
 }
-.fa-bars{
+
+.fa-bars {
     height: 50%;
 }
 
@@ -161,9 +151,11 @@ li i:hover {
 .navbar-toggle {
     z-index: 3;
 }
-.navbar{
+
+.navbar {
     background: #333;
 }
+
 .navRight {
     /* padding: 0 !important; */
     /* padding-top: 80% !important; */
@@ -173,27 +165,33 @@ li i:hover {
     height: 33.3%;
     vertical-align: middle;
 }
-a p{
-    padding-top: 112px;
+
+a p {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
     font-size: 35px;
 }
-.backArrow{
+
+.backArrow {
     transition: all .3s;
     display: none;
     position: absolute;
     top: 0;
     padding: 22px 35px;
     color: white;
-    
 }
-.backArrow:hover{
+
+.backArrow:hover {
     color: #4caf50;
-    
 }
+
 .fa-angle-left:before:hover {
     background: #2C2C2C
 }
-.profile{
+
+.profile {
     border-radius: 100px;
     height: 100px;
     width: 100px;
@@ -202,6 +200,17 @@ a p{
     vertical-align: middle;
     margin-top: 25px;
 }
-.right{
+
+.right {
     transition: .5s;
+}
+
+
+@media screen and (min-width: 1920px){
+    .widescreenArrowLeft {
+        margin-left: 15% !important;
+    }
+    .widescreenArrowRight {
+        margin-left: 82% !important;
+    }
 }
