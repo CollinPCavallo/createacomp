@@ -110,7 +110,7 @@ ul {
     height: 50%;
 }
 
-i{
+i {
     padding: 15px 35px;
     color: #4CAF50;
     transition: .5s;
@@ -118,7 +118,6 @@ i{
 
 li i {
     display: block;
-    
     text-align: center;
     padding: 15px 35px;
     text-decoration: none;
@@ -136,14 +135,8 @@ i:hover {
 }
 
 .navbar-brand {
-    /* right: 50%; */
-    position: absolute;
-    width: 33%;
-    left: 33%;
-    /* top: 0; */
-    font-weight: 800;
-    text-align: center;
-    margin: auto;
+    /* font-weight: 800; */
+    margin: 0 auto;
     color: #4CAF50;
     font-size: 50px;
 }
@@ -205,7 +198,39 @@ a p {
     transition: .5s;
     left: 0;
 }
+
 .left {
     transition: .5s;
     right: 0;
+}
+
+.fa-user-circle {
+    position: absolute;
+    right: 0;
+}
+
+.fa-bars {
+    position: absolute;
+    left: 0;
+}
+
+@media screen and (max-width:500px) {
+    .fa-bars,
+    .fa-user-circle {
+        font-size: 35px;
+        padding: 21px 25px;
+    }
+    .left{
+        left: 0 !important;
+    }
+    .right{
+        right: 0 !important;
+        left: unset;
+    }
+    .mobileNav{
+        width : 100% !important;
+    }
+    .navbar-brand {
+        font-size: 30px;
+    }
 }

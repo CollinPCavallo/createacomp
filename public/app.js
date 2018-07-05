@@ -4,6 +4,7 @@ function openNav() {
     // document.getElementsByClassName("navRight").style.height = "360px";
     document.getElementById("main").style.marginLeft = "500px";
     document.getElementsByClassName('left')[0].style.display = 'block';
+    document.getElementById('mySidenav').classList.toggle('mobileNav')
    
     // document.body.style.backgroundColor = "rgba(34,33,33,.9)";
     
@@ -14,6 +15,7 @@ function openAccount() {
     document.getElementById("main").style.marginRight = "500px";
     // document.body.style.backgroundColor = "rgba(34,33,33,.9)";
     document.getElementsByClassName('right')[0].style.display = 'block';
+    document.getElementById('accountTab').classList.toggle('mobileNav')
     
 }
 
@@ -24,6 +26,7 @@ function closeNav() {
     document.getElementById("main").style.marginLeft = "0";
     document.getElementsByClassName('backArrow')[0].style.display = 'none';
     document.body.style.backgroundColor = "#222121";
+    document.getElementById('mySidenav').classList.toggle('mobileNav')
 }
 
 function closeAccount() {
@@ -31,4 +34,6 @@ function closeAccount() {
     document.getElementById("main").style.marginRight = "0";
     document.getElementsByClassName('right')[0].style.display = 'none';
     document.body.style.backgroundColor = "#222121";
+    document.getElementById('accountTab').classList.toggle('mobileNav')
+
 }
