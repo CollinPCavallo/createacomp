@@ -4,7 +4,6 @@ function openNav() {
     // document.getElementsByClassName("navRight").style.height = "360px";
     document.getElementById("main").style.marginLeft = "500px";
     document.getElementsByClassName('left')[0].style.display = 'block';
-    document.getElementsByClassName('backArrow')[0].style.marginLeft = '80%';
    
     // document.body.style.backgroundColor = "rgba(34,33,33,.9)";
     
@@ -15,7 +14,6 @@ function openAccount() {
     document.getElementById("main").style.marginRight = "500px";
     // document.body.style.backgroundColor = "rgba(34,33,33,.9)";
     document.getElementsByClassName('right')[0].style.display = 'block';
-    document.getElementsByClassName('right')[0].style.marginRight = '80%';
     
 }
 
