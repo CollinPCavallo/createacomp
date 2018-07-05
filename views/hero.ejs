@@ -1,92 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
+<% include partials/header %>
+    <div class="container-fluid">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
-    <link rel="stylesheet" href="/reset.css">
-    <link rel="stylesheet" href="/app.css">
-</head>
+        <div class="sideNavContainer">
+            <div id="mySidenav" class="sidenav">
+                <i onclick='closeNav()' class="left fas fa-times fa-3x backArrow"></i>
+                <a class='navRight' href="#">
+                    <p>Search</p>
+                </a>
+                <a class='navRight' href="#">
+                    <p>Build</p>
+                </a>
+                <a class='navRight' href="#">
+                    <p>Community</p>
+                </a>
+            </div>
+            <div id="accountTab" class="account">
+                <i onclick='closeAccount()' class="right fas fa-times fa-3x backArrow"></i>
+                <img class='profile' src="https://d30y9cdsu7xlg0.cloudfront.net/png/138927-200.png" alt="">
+            </div>
 
-<body>
-<div class="sideNavContainer">
-    <div id="mySidenav" class="sidenav">
-    <i onclick='closeNav()' class="left fas fa-times fa-3x backArrow"></i>
-        <a class='navRight' href="#">
-            <p>Search</p>
-        </a>
-        <a class='navRight' href="#">
-            <p>Build</p>
-        </a>
-        <a class='navRight' href="#">
-            <p>Community</p>
-        </a>
-    </div>
-    <div id="accountTab" class="account">
-    <i onclick='closeAccount()' class="right fas fa-times fa-3x backArrow"></i>
-        <img class='profile' src="https://d30y9cdsu7xlg0.cloudfront.net/png/138927-200.png" alt="">
-    </div>
-
-</div>
-
-
-    <!-- Use any element to open the sidenav -->
-
-
-
-    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-    <!-- <div class="container">
-        <div class="nav">
-            <ul>
-                <li>
-                    <i onclick="openNav()" class="fas fa-bars fa-3x"></i>
-                </li>
-                <li style="float:right">
-                    <i onclick="openAccount()" class="fas fa-user-circle fa-3x"></i>
-                </li>
-            </ul>
         </div>
-    </div> -->
-    <nav class="navbar navbar-default" role="navigation">
 
-        <!-- Brand and toggle get grouped for better mobile display -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <h1 class="navbar-brand" href="#">Build-A-Comp</h1>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li>
+                        <i onclick="openNav()" class="fas fa-bars fa-3x"></i>
+                    </li>
 
-        <h1 class="navbar-brand" href="#">Build-A-Comp</h1>
-        <!-- Collect the nav links, forms, and other content for toggling -->
+                </ul>
+                        
+                    <i onclick="openAccount() " class="fas fa-user-circle fa-3x "></i>
+                    
+                <!-- <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form> -->
+            </div>
+        </nav>
 
+        <div id="main">
 
-        <ul class="nav navbar-nav navbar-left">
-
-            <li>
-                <i onclick="openNav()" class="fas fa-bars fa-3x"></i>
-            </li>
-
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li>
-                <i onclick="openAccount() " class="fas fa-user-circle fa-3x "></i>
-            </li>
-
-        </ul>
-
-    </nav>
-
-    <div id="main">
-        <img src="/imgs/monitor.svg" alt="">
-        <img src="/imgs/pc.svg" alt="">
+        </div>
     </div>
 
-
-
-
-    <script src="/app.js "></script>
-</body>
-
-</html>
+    <% include partials/footer%>
