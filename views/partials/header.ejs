@@ -13,9 +13,49 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
     <link rel="stylesheet" href="/reset.css">
     <link rel="stylesheet" href="/app.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 
 <body>
+<div class="sideNavContainer">
+    <div id="mySidenav" class="sidenav">
+    <i onclick='closeNav()' class="left fas fa-times fa-3x backArrow"></i>
+        <a class='navRight' href="/search">
+            <p>Search</p>
+        </a>
+        <a class='navRight' href="/build">
+            <p>Build</p>
+        </a>
+        <a class='navRight' href="/community">
+            <p>Community</p>
+        </a>
+    </div>
+    <div id="accountTab" class="account">
+    <i onclick='closeAccount()' class="right fas fa-times fa-3x backArrow"></i>
+        <img class='profile' src="https://d30y9cdsu7xlg0.cloudfront.net/png/138927-200.png" alt="">
+    </div>
+
+</div>
+
+    <nav class="navbar navbar-default" role="navigation">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+
+        <h1 class="navbar-brand" href="#">Build-A-Comp</h1>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+
+
+        <ul class="nav navbar-nav navbar-left">
+
+            <li>
+                <i onclick="openNav()" class="fas fa-bars fa-3x"></i>
+            </li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <i onclick="openAccount() " class="fas fa-user-circle fa-3x "></i>
+            </li>
+
+        </ul>
+
+    </nav>

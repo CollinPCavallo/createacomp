@@ -213,6 +213,12 @@ a p {
     position: absolute;
     left: 0;
 }
+.header {
+    color: white;
+    text-align: center;
+    font-size: 85px;
+    padding: 85px;
+}
 
 @media screen and (max-width:500px) {
     .fa-bars,
