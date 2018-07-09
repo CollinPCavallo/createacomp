@@ -189,7 +189,7 @@ a p {
     height: 100px;
     width: 100px;
     text-align: center;
-    border: 1px solid #4caf50;
+    border: 1px solid rgb(76, 175, 80);
     vertical-align: middle;
     margin-top: 25px;
 }
@@ -239,4 +239,24 @@ a p {
     .navbar-brand {
         font-size: 30px;
     }
+}
+.search {
+    border-radius: 100px;
+    margin: 35px auto;
+    margin-top: 100px;
+    width: 75%;
+    background: rgb(22, 21, 21);
+    color: white;
+    padding: 20px;
+    font-size: 35px;
+    text-align: center;
+    border: none;
+    
+}
+.search:focus{
+    background: black;
+    color: white;
+    box-shadow: 0px 0px 8px 1px rgba(13,255,0,1);
+    border: none;
+    
 }
