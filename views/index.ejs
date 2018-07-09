@@ -1,27 +1,33 @@
 <% include partials/header %>
 
     <div id="main">
-        <div class="container">
-            <div class="row">
-                <% builds.forEach(function(build) {%>
-                    <div class="card col-sm-3">
-                        <img class="card-img-top" src="http://via.placeholder.com/286x180" alt="Comp Img">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <%= build.name %>
-                            </h5>
-                            <h5 class="card-title">
-                                <%= build.author %>
-                            </h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="/build/<%=build._id%>" class="btn btn-primary">Go somewhere</a>
+        <div class="container indexText">
+            <h1 class="white">Build, edit, discuss and share your PC builds</h1>
+            <h4 class="green">Turn your dreams into reality with our BuildARigMatron6000. Customize every little piece till your heart desires Want to
+                crush frames? Liquid Cooling? RGB?? We have every components you'd ever need, with more being added everyday! Don't want
+                to start from scratch? Get inspired or edit A build already in our collection from our other users, an extra fan here,
+                a different GPU here and you'll have a PC of your own in no time. Have questions about your build, or just want to talk
+                shop with your fellow PMCR brethren and sistren? Check out all the overclocked discussions going on in our chat section.
+                This PC community is ever-growing and we want you to be one of us. We don't bite.</h4>
+                <div class="row">
+                    <% builds.forEach(function(build) {%>
+                        <div class="card col-sm-3">
+                            <img class="card-img-top" src="http://via.placeholder.com/286x180" alt="Comp Img">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <%= build.name %>
+                                </h5>
+                                <h5 class="card-title">
+                                    <%= build.author %>
+                                </h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="/build/<%=build._id%>" class="btn btn-primary">Go somewhere</a>
+                            </div>
                         </div>
-                    </div>
-                    <%})%>
+                        <%})%>
+                </div>
             </div>
-
-        </div>
-
+            
     </div>
 
     <% include partials/footer %>
