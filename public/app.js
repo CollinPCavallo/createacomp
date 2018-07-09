@@ -1,6 +1,7 @@
 function openNav() {
     document.getElementById("mySidenav").style.width = "24%";
     document.getElementById("mySidenav").style.height = "100%";
+    document.getElementById('main').style.marginLeft = '500px';
     // document.getElementsByClassName("navRight").style.height = "360px";
     document.getElementsByClassName('left')[0].style.display = 'block';
     document.getElementById('mySidenav').classList.toggle('mobileNav')
@@ -23,6 +24,7 @@ function closeNav() {
     document.getElementsByClassName('backArrow')[0].style.display = 'none';
     document.body.style.backgroundColor = "#222121";
     document.getElementById('mySidenav').classList.toggle('mobileNav')
+    document.getElementById('main').style.marginLeft = '0px';
 }
 
 function closeAccount() {

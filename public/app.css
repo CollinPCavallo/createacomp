@@ -260,3 +260,9 @@ a p {
     border: none;
     
 }
+.white{
+    color: white;
+}
+.card{
+    margin: 3em 2em;
+}

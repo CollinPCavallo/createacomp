@@ -2,6 +2,11 @@
 
     <div id="main">
     <h1 class='header'>Build Page</h1>
+    <form action="/builds" method="post">
+    <input type="text" name="comp[name]" placeholder="PC Name">
+    <input type="text" name="comp[author]" placeholder="Author">
+    <input type="submit">
+    </form>
     </div>
 
 <% include partials/footer %>
