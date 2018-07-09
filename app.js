@@ -51,6 +51,17 @@ app.post('/builds', function(req, res) {
     });
 });
 
+//SHOW ROUTE
+app.get('/build/:id', function(req, res) {
+    Comp.findById(req.params.id, function(err, foundBuild) {
+        if(err) {
+            console.log(err)
+        } else {
+            res.render('show', {build: foundBuild})
+        }
+    })
+});
+
 
 
 app.get('/search', function(req, res) {
