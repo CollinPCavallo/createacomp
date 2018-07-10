@@ -8,26 +8,27 @@
                 to start from scratch? Get inspired or edit A build already in our collection from our other users, an extra fan here,
                 a different GPU here and you'll have a PC of your own in no time. Have questions about your build, or just want to talk
                 shop with your fellow PMCR brethren and sistren? Check out all the overclocked discussions going on in our chat section.
-                This PC community is ever-growing and we want you to be one of us. We don't bite.</h4>
-                <div class="row">
-                    <% builds.forEach(function(build) {%>
-                        <div class="card col-sm-3">
-                            <img class="card-img-top" src="http://via.placeholder.com/286x180" alt="Comp Img">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    <%= build.name %>
-                                </h5>
-                                <h5 class="card-title">
-                                    <%= build.author %>
-                                </h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="/build/<%=build._id%>" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
+                This PC community is ever-growing and we want you to be one of us. We don't bite.
+            </h4>
+
+                <% builds.forEach(function(build) {%>
+                    <div class="row">
+                            <img class="col-sm-4 shortImg" src="http://via.placeholder.com/286x180" alt="Comp Img">
+                            <div class="col-sm-8 content">
+
+                                
+                                                                <h5 class='white text-left'>
+                                                                    <%= build.name %>
+                                                                </h5>
+                                                                <h5 class='white text-left'>
+                                                                    <%= build.author %>
+                                                                </h5>
+                                                                <p class='white text-left'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                                <a href="/build/<%=build._id%>" class="btn btn-primary moreInfo">Go somewhere</a>
+                            </div>  
+                    </div>
                         <%})%>
-                </div>
-            </div>
-            
+                        
     </div>
 
     <% include partials/footer %>

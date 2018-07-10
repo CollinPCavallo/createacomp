@@ -21,3 +21,36 @@ POST /BUILD/EDIT/:ID // POST THE FORM TO DATABASE
 PUT /BUILD/EDIT/:ID // UPDATE THE DATABASE
 DELETE /BUILD/EDIT/:ID // REMOVE THE BUILD
 db.builds.find({mobo: 'asus'})
+comp = {
+    name: COLLIN COMP
+    author,
+    desc,
+    parts : [
+        {mobo : id jhfidskijfaskdf findbyid}
+        
+    ]
+    
+
+}
+part : {
+    {
+        type: mobo
+        spec: {
+            chipset,
+            usbports,
+            size,
+        }
+        id,
+        name,
+        
+    },
+    {
+        type cpu,
+        spec:{
+
+        }
+        id,
+        name
+    }
+    
+}
