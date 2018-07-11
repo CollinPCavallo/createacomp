@@ -213,6 +213,7 @@ a p {
     position: absolute;
     left: 0;
 }
+
 .header {
     color: white;
     text-align: center;
@@ -220,26 +221,6 @@ a p {
     padding: 85px;
 }
 
-@media screen and (max-width:500px) {
-    .fa-bars,
-    .fa-user-circle {
-        font-size: 35px;
-        padding: 21px 25px;
-    }
-    .left{
-        left: 0 !important;
-    }
-    .right{
-        right: 0 !important;
-        left: unset;
-    }
-    .mobileNav{
-        width : 100% !important;
-    }
-    .navbar-brand {
-        font-size: 30px;
-    }
-}
 .search {
     border-radius: 100px;
     margin: 35px auto;
@@ -251,52 +232,117 @@ a p {
     font-size: 35px;
     text-align: center;
     border: none;
-    
 }
-.search:focus{
+
+.search:focus {
     background: black;
     color: white;
-    box-shadow: 0px 0px 8px 1px rgba(13,255,0,1);
+    box-shadow: 0px 0px 8px 1px rgba(13, 255, 0, 1);
     border: none;
-    
 }
-.white{
+
+.white {
     color: white;
 }
-.green{
+
+.green {
     color: #4CAF50;
     font-size: 1.8rem;
 }
-.card{
+
+.card {
     margin: 3em 2em;
 }
-h1 a{
+
+h1 a {
     color: #4CAF50
 }
-h1 a:hover{
+
+h1 a:hover {
     color: #4CAF50;
-    text-decoration:none;
+    text-decoration: none;
 }
-.indexText{
-        text-align: center;
-        margin-top: 10em;
+
+.indexText {
+    text-align: center;
+    margin-top: 3em;
 }
-.row {
-    border: 1px solid #4CAF50;
-    margin: 15px;
-    padding: 15px;
-}
+
 .moreInfo {
-    float: left;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 /* .shortImg {
     margin-right: 15px;
     float:left;
-
+    
 }
 .ShortComp {
     margin: 15px;
     padding: 15px;
     border: 2px solid #4caf50
 } */
+
+.buildContainer {
+    border-radius: 25px;
+    background: #2C2C2C;
+    margin: 15px;
+    padding: 15px;
+}
+
+.buildList {
+    margin: 0 auto;
+}
+
+@media screen and (max-width:500px) {
+    #main {
+        margin: 0 !important;
+    }
+    .fa-bars,
+    .fa-user-circle {
+        font-size: 35px;
+        padding: 21px 25px;
+    }
+    .left {
+        left: 0 !important;
+    }
+    .right {
+        right: 0 !important;
+        left: unset;
+    }
+    .mobileNav {
+        width: 100% !important;
+    }
+    .navbar-brand {
+        font-size: 30px;
+    }
+
+    .buildContainer {
+        text-align: center !important;
+    }
+    .moreInfo {
+        width: 70%;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        top: unset;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .catchLine {
+        font-size: 1.3em
+    }
+    .mission {
+        font-size: 14px;
+    }
+    #name, #author, #desc {
+        text-align: center !important;
+    }
+}
+#desc {
+        margin-top: 15px;
+        margin-bottom: 3rem
+}
