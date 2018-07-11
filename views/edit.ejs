@@ -1,0 +1,12 @@
+<% include partials/header %>
+
+    <div id="main">
+    <h1 class='header'>Build Page</h1>
+    <form action="/build/<%= build.id %>?_method=PUT" method="POST">
+    <input type="text" name="comp[name]" value="<%=build.name%>">
+    <input type="text" name="comp[author]" value="<%=build.author%>">
+    <input type="submit">
+    </form>
+    </div>
+
+<% include partials/footer %>

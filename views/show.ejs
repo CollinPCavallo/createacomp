@@ -1,7 +1,10 @@
 <%include partials/header %>
 <div class="container">
-    <h1 class="white"> <%=build.name %></h1>
-    <h1 class="white"> <%=build.author %></h1>
+    <h1 class="white"> <%= build.name %></h1>
+    <h1 class="white"> <%= build.author %></h1>
+    <h1 class="white"> <%= build.id %></h1>
+    
+    <a href="/build/<%= build.id %>/edit">Edit this build</a>
 </div>
 
 <%include partials/footer%>
